@@ -14,3 +14,19 @@ export const withdrawMoney = (amount) => {
         })
     }
 }
+export const zero = () => {
+    return (dispatch) => {
+        dispatch({
+            type: 'zero',
+            payload: 0
+        })
+    }
+}
+export const addPost = (post) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'ADD_POST',
+            payload: post
+        })
+    }
+}

@@ -4,6 +4,8 @@ const reducer = (state = 0, action) => {
             return state + action.payload
         case "withdraw":
             return state - action.payload
+        case "zero":
+            return state * action.payload
         default:
             return state
     }
